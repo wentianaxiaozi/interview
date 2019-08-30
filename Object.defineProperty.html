@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object.defineProperty</title>
+</head>
+<body>
+    <script>
+        const object1 = {}
+        Object.defineProperty(object1, 'msg', {
+            value: 42,
+            writable: false
+        })
+        object1.msg = 77
+        console.log(object1.msg)
+    </script>
+</body>
+</html>

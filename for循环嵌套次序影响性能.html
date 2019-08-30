@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i = 0
+        let j = 0
+        let k = 0
+        var t1 = new Date().getTime()
+        for (i; i < 100; i++) {
+          for (j; j < 1000; j++) {
+            for (k; k < 10000; k++) {
+            }
+        }
+    }
+    var t2 = new Date().getTime()
+    console.log('first time', t2 - t1)
+
+    for (i; i < 10000; i++) {
+      for (j; j < 1000; j++) {
+        for (k; k < 100; k++) {
+
+        }
+    }
+}
+var t3 = new Date().getTime()
+console.log('two time', t3 - t2)
+</script>
+</body>
+</html>
