@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转数组的算法题</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5,6,7]
+        let k = 9
+        // 因为k可能大于数组的长度  所以先取余
+        let len = arr.length
+        let step = k % len
+        // 我们开始反转数组
+        let _arr = arr.slice(-step)
+        let tian = arr.slice(0, len-step)
+        let result = [..._arr, ...tian]
+        console.log(result)
+
+    </script>
+</body>
+</html>
