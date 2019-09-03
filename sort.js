@@ -45,27 +45,30 @@
 
 
 // 插入排序
-const insertionSort = arr => {
-    const len = arr.length
-    if(len < 1) {
-        return
-    }
-    let preIndex, current
-    for(let i = 0; i< len; i++) {
-        preIndex = i - 1
-        current = arr[i]
-        while(preIndex >= 0 && arr[preIndex] > current) {
-            // 将大的元素后移一位
-            arr[preIndex + 1] = arr[preIndex]
-            preIndex--
-        }
-        if(preIndex + 1 != i) {
-            arr[preIndex + 1] = current
-            console.log(arr);
+// const insertionSort = arr => {
+//     const len = arr.length
+//     if(len < 1) {
+//         return
+//     }
+//     let preIndex, current
+//     for(let i = 0; i< len; i++) {
+//         preIndex = i - 1
+//         current = arr[i]
+//         while(preIndex >= 0 && arr[preIndex] > current) {
+//             // 将大的元素后移一位
+//             arr[preIndex + 1] = arr[preIndex]
+//             preIndex--
+//         }
+//         if(preIndex + 1 != i) {
+//             arr[preIndex + 1] = current
+//             console.log(arr);
             
-        }
-    }
-    return arr
-}
+//         }
+//     }
+//     return arr
+// }
 
-insertionSort([8,2,4,1,7])
+// insertionSort([8,2,4,1,7])
+
+//  x >> 1 是位运算符，表示右移一位，相当于 x 除以 2 取整   Math.floor(x/2)
+

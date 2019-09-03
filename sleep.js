@@ -49,3 +49,23 @@
 //     console.log('使用es5实现sleep')
 // }
 // sleep(outPut, 1000)
+
+
+// console.log('start')
+// setTimeout(function() {
+// 	console.log('ing....')
+// })
+
+// console.log('end')
+
+setTimeout(function() {
+    console.log('setTimeout');
+})
+
+new Promise(function(resolve) {
+    console.log('promise');
+}).then(function() {
+    console.log('then');
+})
+
+console.log('console');

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new的过程</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var new = new myFuction('tian', 'code')
+		new myFuction {
+			let obj = {}
+			obj.__proto__ = myFuction.prototype
+			let result = myFuction.call(obj, 'tian','code')
+			return typeof result === 'obj' ? result : obj
+		}
+	</script>
+</body>
+</html>
