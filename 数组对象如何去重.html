@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组对象如何去重</title>
+</head>
+<body>
+    <script>
+        var arrObj = [
+        {key: 1, value: '11'},
+        {key: 1, value: '11'}
+        ]
+
+        // let arr = new Set(Array.from(arrObj))
+        var hash = {}
+        let arr = arrObj.reduce(function(item, next) {
+            hash[next.name] ? '' : hash[next.name] = true && item.push(next);
+            return item
+        }, [])
+
+        console.log(arr)
+    </script>
+</body>
+</html>
