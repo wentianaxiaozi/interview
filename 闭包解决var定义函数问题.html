@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包解决var在for循环中的问题</title>
+</head>
+<body>
+    <script>
+       //先用闭包解决
+       // for(var i = 0; i < 10; i++) {
+       //      (function(i) {
+       //          setTimeout(()=>{
+       //              console.log(i)
+       //          }, i*100)
+       //      })(i);
+       // }
+
+       // 使用setTimeout的第三个参数
+       // for(var i = 0; i < 10; i++){
+       //  setTimeout((i)=>{
+       //      console.log(i)
+       //  }, i*100,i)
+       // }
+
+       // 使用let解决
+       // for(let i = 0; i< 10; i++) {
+       //  console.log(i)
+       // }
+    </script>
+</body>
+</html>

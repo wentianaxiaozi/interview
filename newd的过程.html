@@ -12,6 +12,11 @@
 			let result = myFuction.call(obj, 'tian','code')
 			return typeof result === 'obj' ? result : obj
 		}
+
+		// 创建一个空对象
+		// 将新创建的空对象的隐士原型指向其构造函数的显示原型
+		// 使用call 改变this 指向
+		// 如果无法返回值或者返回一个非对象值，则将obj返回作为新对象；如果返回值是一个新对象的话那么直接返回该对象
 	</script>
 </body>
 </html>
