@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91538d4-dae8-4616-ab23-b5c9123f2111" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/一元运算符.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/下面代码输出什么.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/修改数组指定位置的值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/对象负值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数组对象如何去重.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/有趣的js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/浏览器Eventloop的执行顺序.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/闭包解决var定义函数问题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/匹配相关字母.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/斐波纳切数列.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/素数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/阶乘.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apply调用.html" beforeDir="false" afterPath="$PROJECT_DIR$/apply调用.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array.html" beforeDir="false" afterPath="$PROJECT_DIR$/array.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newd的过程.html" beforeDir="false" afterPath="$PROJECT_DIR$/newd的过程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object.html" beforeDir="false" afterPath="$PROJECT_DIR$/object.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,16 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/一元运算符.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,29 +29,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/下面代码输出什么.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/object.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/对象负值.html">
+        <entry file="file://$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="278">
+              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/阶乘.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/斐波纳切数列.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/素数.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -95,12 +87,17 @@
         <option value="$PROJECT_DIR$/下面代码输出什么.html" />
         <option value="$PROJECT_DIR$/object.html" />
         <option value="$PROJECT_DIR$/对象负值.html" />
+        <option value="$PROJECT_DIR$/匹配相关字母.html" />
+        <option value="$PROJECT_DIR$/阶乘.html" />
+        <option value="$PROJECT_DIR$/斐波纳切数列.html" />
+        <option value="$PROJECT_DIR$/素数.html" />
+        <option value="$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="391" />
-    <option name="y" value="131" />
+    <option name="x" value="40" />
+    <option name="y" value="71" />
     <option name="width" value="1400" />
     <option name="height" value="768" />
   </component>
@@ -109,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +117,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,12 +158,15 @@
       <option name="presentableId" value="Default" />
       <updated>1566138470611</updated>
       <workItem from="1566138472579" duration="284000" />
-      <workItem from="1567520217781" duration="2275000" />
+      <workItem from="1567520217781" duration="2474000" />
+      <workItem from="1567608156579" duration="1935000" />
+      <workItem from="1567921689007" duration="4476000" />
+      <workItem from="1568035486712" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2559000" />
+    <option name="totallyTimeSpent" value="9885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -178,8 +178,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="391" y="131" width="1400" height="768" extended-state="0" />
-    <editor active="true" />
+    <frame x="40" y="71" width="1400" height="768" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24945612" />
@@ -215,16 +214,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/下面代码输出什么.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="336">
           <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
@@ -240,6 +232,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sleep.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/有趣的js.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/匹配相关字母.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/阶乘.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/斐波纳切数列.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/素数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let obj = {};
+    let arr = [1,2,3,4,5,5,5,3];
+    let _arr = [];
+
+    for(let i = 0; i < arr.length; i++) {
+        if(obj.hasOwnProperty(arr[i])) {
+            _arr.push(arr[i])
+        }else {
+            obj[arr[i]] = arr[i]
+        }
+    }
+    console.log(_arr)
+</script>
+</body>
+</html>

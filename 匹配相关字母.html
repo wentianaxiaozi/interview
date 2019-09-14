@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getStr(str) {
+        let a = str.split('');
+        let arr = [];
+        for(let i = 0; i < a.length; i++) {
+            if(a[i] > 0 && a[i] < 10) {
+                arr.push(a[i])
+            }
+        }
+        return arr.join('');
+    }
+   let b = getStr('123world4');
+    console.log(b);
+</script>
+</body>
+</html>

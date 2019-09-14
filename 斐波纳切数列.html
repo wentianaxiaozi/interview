@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>斐波那切数列</title>
+</head>
+<body>
+<script>
+    // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,
+    function fn(n) {
+        if(n == 0) {
+            return 0
+        }
+        if(n == 1) {
+            return 1
+        }
+        if(n >= 2){
+            return fn(n-1) + fn(n-2)
+        }
+    }
+
+    let a = fn(4);
+    console.log(a)
+</script>
+</body>
+</html>
