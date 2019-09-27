@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拦截器</title>
+</head>
+<body>
+    <script>
+        // 用户未设置头像则返回默许头像
+        const user = {name: 'tian'}
+        const userProxy = new Proxy(user,{
+            get: (obj, prop)=>{
+                if(prop==='avatar'){
+                    if(!obj.avatar) {
+                        return '不存在'
+                    }
+                }
+                return obj[prop]
+            }
+        })
+        console.log(userProxy.avatar)
+    </script>
+</body>
+</html>
