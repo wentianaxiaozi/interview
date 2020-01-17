@@ -29,27 +29,74 @@
 
 // 使用函数写法  处理大数量的array
 
-const nums = [1,2,3,4,5,6,7,8,9,10]
-const isOdd = num => num % 2 !== 0
-const double = num => num * 2
-const add = (total, num) => total += num
+// const nums = [1,2,3,4,5,6,7,8,9,10]
+// const isOdd = num => num % 2 !== 0
+// const double = num => num * 2
+// const add = (total, num) => total += num
 
-const magic = array => {
-    const length = array.length
-    let i = 0;
-    let total = 0
-    for(i; i < length; i++) {
-       // 判断数组的第i项是否为奇数
-       if(isOdd(nums[i])){
-            // 则进行翻倍运算
-            let doubled = double(nums[i])
-            // 进行求综合
-           total = add(total, doubled)
-       }
-    }
+// const magic = array => {
+//     const length = array.length
+//     let i = 0;
+//     let total = 0
+//     for(i; i < length; i++) {
+//        // 判断数组的第i项是否为奇数
+//        if(isOdd(nums[i])){
+//             // 则进行翻倍运算
+//             let doubled = double(nums[i])
+//             // 进行求综合
+//            total = add(total, doubled)
+//        }
+//     }
 
-    // 最后,遍历完成返回
-    return total
-}
+//     // 最后,遍历完成返回
+//     return total
+// }
 
-console.log(magic(nums))
+// console.log(magic(nums))
+
+
+// reduce妙用
+// let arr = [1,2,3]
+// let _arr = arr.reduce(function(sum, cur) {
+//   return sum + cur
+// }, 0)
+// console.log(_arr)
+
+var wizards = [
+  {
+    name: 'Harry Potter',
+    house: 'Gryfindor'
+  },
+  {
+    name: 'Cedric Diggory',
+    house: 'Hufflepuff'
+  },
+  {
+    name: 'Tonks',
+    house: 'Hufflepuff'
+  },
+  {
+    name: 'Ronald Weasley',
+    house: 'Gryfindor'
+  },
+  {
+    name: 'Hermione Granger',
+    house: 'Gryfindor'
+  }
+];
+
+
+// var hufflepuff = wizards.filter(function (wizard) {
+//   return wizard.house === 'Hufflepuff';
+// }).map(function (wizard) {
+//   return wizard.house;
+// });
+// console.log(hufflepuff)
+var hufflepuff = wizards.reduce((newArr, wizards)=> {
+  if(wizards.house == 'Hufflepuff') {
+    newArr.push(wizards.name)
+  }
+  return newArr
+}, [])
+
+console.log(hufflepuff)

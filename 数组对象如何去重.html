@@ -7,14 +7,16 @@
 <body>
     <script>
         var arrObj = [
-        {key: 1, value: '11'},
-        {key: 1, value: '11'}
+        {key: 2, value: '11', id: 13},
+        {key: 1, value: '11', id: 13},
+        {key: 4, value: '11', id: 12},
+        {key: 5, value: '11', id: 13}
         ]
 
         // let arr = new Set(Array.from(arrObj))
         var hash = {}
         let arr = arrObj.reduce(function(item, next) {
-            hash[next.name] ? '' : hash[next.name] = true && item.push(next);
+            hash[next.id] ? '' : hash[next.id] = true && item.push(next)
             return item
         }, [])
 
@@ -22,3 +24,22 @@
     </script>
 </body>
 </html>
+
+<!-- arrObjFilter -->
+<!--
+querySdkAndApi
+
+    console.log('第二个侧边栏数据')
+    console.log(vm.APIMenusSource)
+    console.log('第二个侧边栏数据') -->
+
+
+
+
+      由于该游戏域名变更，按照如下解析：
+   http://zlws.firstmeetgame.com
+
+
+       申请港泰文龙纪元官网域名如下，
+    http://dnsth.firstmeetgame.com/
+   先解析到测试服务器IP: 150.109.24.109

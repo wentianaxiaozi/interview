@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bind的实现</title>
+</head>
+<body>
+
+    <script>
+        /*
+            1 箭头函数的this永远指向它所在的作用域
+            2 函数作为构造函数用new关键字调用时,不应该改变this指向,因为new绑定的优先级高于显示绑定和硬绑定
+        */
+        Function.prototype.mybind = function(thisArg) {
+            if(typeof this !== 'function') {
+                throw TypeError("bind must be called on a function")
+            }
+
+            // 拿到参数 传给调用者
+            const args = Array.prototype.slice.call(arguments, 1)
+            // 保存this
+            self = this
+        }
+    </script>
+</body>
+</html>

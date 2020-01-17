@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改页面内容</title>
+</head>
+<body>
+    <ul id="js-list"></ul>
+    <script>
+        // var list = document.getElementById('list')
+        // for(let i = 0; i < 3; i++) {
+        //     let item = document.createElement('li')
+        //     item.innerText = i + 1
+        //     list.appendChild(item)
+        // }
+
+        (()=> {
+            var ndContainer = document.getElementById('js-list')
+            if(!ndContainer) {
+                return
+            }
+            // for(var i = 0; i<400; i++) {
+            //     var ndItem = document.createElement('li')
+            //     ndItem.innerText = i+1
+            //     ndContainer.appendChild(ndItem)
+            // }
+
+            // ndContainer.addEventListener('click', function(e) {
+            //     if(e.target.tagName == 'LI') {
+            //         console.log(e.target.innerText)
+
+            //     }
+            // })
+
+            const total = 30000
+            const batchSize = 4
+            const batchCount = total / batchSize
+            let batchDone = 0 //
+
+        })();
+    </script>
+</body>
+</html>

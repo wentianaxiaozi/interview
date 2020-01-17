@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链</title>
+</head>
+<body>
+    <script>
+        function Foo() {}
+        console.log(Foo.prototype)
+        console.log(Foo.prototype.constructor)
+        console.log(Foo.__proto__)
+        console.log(Function.prototype)
+        console.log(Foo.prototype.__proto__)
+    </script>
+</body>
+</html>
