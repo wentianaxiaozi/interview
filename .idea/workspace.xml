@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91538d4-dae8-4616-ab23-b5c9123f2111" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/匹配相关字母.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/斐波纳切数列.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/素数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/阶乘.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js素数检测.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/函数防抖和节流.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/正则表达式/正则.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/画一个三角形.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法/reduce的高级用法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法/二维数组中的查找.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法/判断一个数是否为两数的平方和.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法/单向链表反转.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法/无重复最长字串.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法/有序数组的两数之和.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/菲波那切数列的再次练习.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,48 +25,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html">
+        <entry file="file://$PROJECT_DIR$/算法/单向链表反转.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/阶乘.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/斐波纳切数列.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/素数.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -92,13 +62,16 @@
         <option value="$PROJECT_DIR$/斐波纳切数列.html" />
         <option value="$PROJECT_DIR$/素数.html" />
         <option value="$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html" />
+        <option value="$PROJECT_DIR$/算法/单向链表反转.html" />
+        <option value="$PROJECT_DIR$/算法/无重复最长字串.html" />
+        <option value="$PROJECT_DIR$/算法/reduce的高级用法.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="71" />
-    <option name="width" value="1400" />
+    <option name="x" value="485" />
+    <option name="y" value="63" />
+    <option name="width" value="838" />
     <option name="height" value="768" />
   </component>
   <component name="ProjectView">
@@ -106,6 +79,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,11 +87,20 @@
               <item name="interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview" type="462c0819:PsiDirectoryNode" />
+              <item name="正则表达式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview" type="462c0819:PsiDirectoryNode" />
+              <item name="算法" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,11 +145,16 @@
       <workItem from="1567608156579" duration="1935000" />
       <workItem from="1567921689007" duration="4476000" />
       <workItem from="1568035486712" duration="716000" />
+      <workItem from="1568439477368" duration="598000" />
+      <workItem from="1568726294660" duration="3981000" />
+      <workItem from="1570590929989" duration="221000" />
+      <workItem from="1571709072312" duration="30000" />
+      <workItem from="1572776618850" duration="111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9885000" />
+    <option name="totallyTimeSpent" value="14826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -178,13 +166,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="71" width="1400" height="768" extended-state="0" />
+    <frame x="485" y="63" width="838" height="768" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24945612" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.42105263" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="GraphQL" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3287879" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3287879" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
@@ -199,6 +187,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24945612" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="GraphQL" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3287879" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3287879" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -235,9 +243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sleep.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/有趣的js.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -245,6 +250,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -269,17 +288,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add.js">
+    <entry file="file://$PROJECT_DIR$/算法/无重复最长字串.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/剑指offer-寻找数组中重复的数.html">
+    <entry file="file://$PROJECT_DIR$/算法/reduce的高级用法.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="117">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/函数防抖和节流.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sleep.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/算法/单向链表反转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>

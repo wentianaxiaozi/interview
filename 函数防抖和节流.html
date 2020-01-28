@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function debounce() {
+            var timer = null
+            return function() {
+                if(timer) {
+                    clearTimeout(timer)
+                    timer = null
+                }
+               timer = setTimeout(function() {
+                console.log('你好')
+               }, 1000)
+            }
+        }
+    </script>
+</body>
+</html>

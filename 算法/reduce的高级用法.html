@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // var arr = [1,2,3,4];
+    //  let sum = arr.reduce((x,y)=>{
+    //     console.log(x +'----'+ y);
+    //    return  x+y
+    // });
+    // console.log(sum);
+
+    // var obj = {key: 'yian', name: 'hello'};
+    // for(let i in obj) {
+    //     console.log(obj[i])
+    // }
+
+
+    let names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+
+    let nameNum = names.reduce((pre,cur)=>{
+        if(cur in pre){
+            // pre[cur]++
+            console.log(pre)
+        }else{
+            pre[cur] = 1
+        }
+        return pre
+    },{});
+    console.log(nameNum);
+
+</script>
+</body>
+</html>

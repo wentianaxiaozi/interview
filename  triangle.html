@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>杨辉三角</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button id="btn">输出</button>
+    <script>
+        let btn = document.getElementById('btn')
+        let input = document.getElementById('input')
+
+        btn.onclick = function() {
+            let res = input.value
+            let space = res.replace(/\s+/g, '')
+            if(isNaN(Number(space))) {
+                alert('请输入数字')
+                return
+            }else {
+                //去除两头空格
+                let _res = res.replace(/^\s+|\s+$/g, '')
+                //替换中间空格吧
+                let _space = _res.replace(/\s+/g, ',')
+                // 将值转为数组
+                let arr = _space.split(',')
+
+                let num = lineNum(arr[0],arr[1])
+                console.log(num)
+            }
+            
+            
+            
+        }
+
+        /*
+            n 行
+            m 列
+        */
+        function lineNum(n,m) {
+            // 第一行 
+            if(m == 1) {
+                return 1
+            }else if(n == m) {
+                return 1
+            }else {
+                return lineNum(n-1, m-1) + lineNum(n-1, m)
+            }
+        }    
+    </script>
+</body>
+</html>

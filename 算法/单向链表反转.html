@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单向链表反转</title>
+</head>
+<body>
+<script>
+    function reverve(list) {
+        var p = list, q = null;
+        console.log(p);
+        while(p.next !== null) {
+            q = p.next;
+            p.next = list.head.next;
+            list.head.next = q;
+        }
+        return list;
+    }
+
+    let result =  reverve([1,2]);
+    console.log(result);
+
+
+
+</script>
+</body>
+</html>
