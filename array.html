@@ -5,11 +5,15 @@
     <title>数组中重复的数字</title>
 </head>
 <body>
-    <div>nknk</div>
+    <ul id="ul">
+    </ul>
+    <script src="https://web.cdn.16801.com/common/jquery.js"></script>
     <script>
         //输出2
 
         // let arr = [2, 3, 1, 0, 2, 5]
+        // let _arr = Array.prototype.slice.call(arr, 0)
+        // console.log(_arr)
         // let _arr = []
         // let len = arr.length
         // // for(let i = 0; i < len; i++) {
@@ -17,6 +21,66 @@
         // //     // console.log(`${i} ------------${arr[i]}`)
         // // }
         // arr.filter()
+        // let arr = [1,12,'', '']
+        // let _arr = arr.filter( val => val)
+        // console.log(_arr)
+
+
+        // function canshu() {
+        //     console.log(arguments)
+        // }
+        // canshu(1,2)
+
+        // var a = { 0: 'lai', 1: 'hua'}
+        // console.log(Array.prototype.slice.call(a, 0))
+        // console.log(Array.prototype)
+
+        let html = ''
+
+let arr = [{"key":"name_1","value":"吞星-1"},{"key":"name_2","value":"吞星-12"},{"key":"name_3","value":"吞星-123"},{"key":"name_4","value":"吞星-1234"},{"key":"name_5","value":"吞星-12345"},{"key":"name_6","value":"吞星-000fsda00"}]
+let _arr = JSON.parse(localStorage.getItem('old'))
+
+
+
+let str1 = JSON.stringify(arr)
+let str2 = JSON.stringify(_arr)
+
+for(let i= 0; i< arr.length; i++) {
+    for(let j = 0; j < _arr.length; j++) {
+        if(arr[i].key == _arr[j].key) {
+            if(arr[i].value != _arr[j].value) {
+                // console.log(arr[i])
+                localStorage.removeItem('old')
+                localStorage.setItem('old', JSON.stringify(arr))
+
+            }
+        }
+
+    }
+}
+
+
+
+
+if(JSON.parse(localStorage.getItem('old')) == null || JSON.parse(localStorage.getItem('old')) == "") {
+        localStorage.setItem('old', JSON.stringify(arr))
+    }else {
+        let _arr = JSON.parse(localStorage.getItem('old'))
+        _arr.unshift(_arr.pop())
+        localStorage.setItem('old', JSON.stringify(_arr))
+        for(let i = 0; i < _arr.length; i++) {
+            html = `
+                <li>${_arr[i].key}-----${_arr[i].value}</li>
+            `
+            $('#ul').append(html)
+
+        }
+
+    }
+
+
+
     </script>
 </body>
 </html>
+

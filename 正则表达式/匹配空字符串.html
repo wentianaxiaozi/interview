@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>{{message}}</div>
+        <!-- <input type="text" v-model="inputVal"> -->
+        <textarea cols="30" rows="10" v-model="inputVal"></textarea>
+        <button @click="button">确定</button>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            message: 'Hello world',
+            inputVal: '',
+        },
+        methods: {
+            button: function() {
+                let vm = this
+                // vm.inputVal
+                // let reg = /(^\s+)|(\s+$)|\s+/g
+                // 去除空格
+                // let space = /\s/g
+                // let _space = space.test(vm.inputVal)
+                // // let _space = vm.inputVal.replace(space,'拿点也')
+                // if(_space) {
+                //     alert('不合法信息')
+                //     return
+                // }
+                // let reg = /\n/g
+                // let res = vm.inputVal.replace(reg, ',')
+                // if(res = '') {
+                //     alert("请输入有效信息")
+                //     return
+                // }
+                // if(res == '') {
+                //     alert('你好')
+                // }
+                if(vm.inputVal == '') {
+                    alert('你好')
+                }
+                console.log(vm.inputVal)
+
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="nav">
+        <li>数学</li>
+        <li>语文</li>
+        <li>英语</li>
+    </ul>
+    <script>
+        var lis = document.querySelector('.nav').querySelectorAll('li')
+        // for(let i = 0; i < lis.length; i++) {
+        //     lis[i].onclick = function() {
+        //         console.log(i);
+                
+        //     }
+        // }
+
+        // for(var i = 0; i < lis.length; i++) {
+        //     (function(i) {
+        //         lis[i].onclick = function() {
+        //             console.log(i);
+                    
+        //         }
+        //     })(i)
+        // }
+
+        var name = 'the window'
+var object = {
+    name: 'my object',
+    getNameFunc: function() {
+        var that = this
+        return function() {
+            return that.name
+        }
+    }
+}
+console.log(object.getNameFunc()())
+    </script>
+</body>
+</html>

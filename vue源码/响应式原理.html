@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        let obj = {
+            _name: '闻天'
+        }
+        Object.defineProperty(obj, 'name', {
+            get() {
+                return this._name +'你好啊'
+            },
+            set(val) {
+               this._name = val
+            }
+        })
+        console.log(obj.name)
+        // obj.name = '小子'
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            this永远指向最后调用他的那个对象
+        */
+
+        // var name = 'windowname'
+        // var a = {
+        //     name: 'objname',
+        //     fn: function() {
+        //         console.log(this.name)
+        //     }
+        // }
+        // // a.fn() //objname
+        // // window.a.fn()
+
+
+        // var f = a.fn
+        // // f()
+        // console.log(f)
+
+        // var name = 'windowname'
+        //  function fn() {
+        //     var name = 'cherry'
+        //     innerFunction()
+        //     function innerFunction() {
+        //         console.log(this.name)
+        //     }
+        //  }
+
+        //  fn()
+
+        /*
+            setTimeout调用的对象是window
+        */
+        // var name = 'windowname'
+
+        // var a = {
+        //     name: 'objname',
+        //     fn2: function() {
+        //         setTimeout(function() {
+        //             console.log(this.name)
+        //         })
+        //     }
+        // }
+
+        // a.fn2()
+
+        /*
+            箭头函数中没有this绑定
+        */
+
+        // var name = 'windowname'
+        // var a = {
+        //     name: 'objname',
+        //     fn2: function() {
+        //         setTimeout(()=>{
+        //             console.log(this.name)
+        //         })
+        //     }
+        // }
+
+        // a.fn2()
+
+        /*
+            在函数中使用_this = this
+        */
+
+        // var name = 'windowname'
+        // var a = {
+        //     name: 'objname',
+        //     fn2: function() {
+        //         var _this = this
+        //         setTimeout(function() {
+        //             console.log(_this.name)
+        //         })
+        //     }
+        // }
+        // a.fn2()
+
+        /*
+            使用apply
+            apply()方法调用一个函数  其具有一个指定的this值  以及作为一个数组(或类似数组的对象) 提供的参数
+        */
+
+        // var name = 'windowname'
+        // var b = {
+        //     name: 'bname'
+        // }
+        // var a = {
+        //     name: 'objname',
+        //     fn2: function() {
+        //         setTimeout(function() {
+        //             console.log(this.name)
+        //         }.apply(b), 100)
+        //     }
+        // }
+        // a.fn2()
+
+        /*
+            使用call
+        */
+
+        // var name = 'windowname'
+        // var a = {
+        //     name: 'objname',
+        //     fn2: function() {
+        //         setTimeout(function() {
+        //             console.log(this.name)
+        //         }.call(a), 1000)
+        //     }
+        // }
+
+        // a.fn2()
+
+
+
+        /*
+            使用bind
+        */
+        // var name = 'windowname'
+        // var a = {
+        //     name: 'objname',
+        //     fn2: function() {
+        //         setTimeout(function() {
+        //             console.log(this.name)
+        //         }.bind(a)(), 1000)
+        //     }
+        // }
+        // a.fn2()
+
+
+        /*
+            call和apply的区别
+        */
+
+
+        // var a = {
+        //     name: 'objname',
+        //     fn: function(a, b) {
+        //         console.log(a+b)
+        //     }
+        // }
+
+        // var b = a.fn
+        // // b.apply(a, [1,2])
+        // // b.call(a, 1,6)
+        // // b.bind(a,1,2)()
+    </script>
+</body>
+</html>

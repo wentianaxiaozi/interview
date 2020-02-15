@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型链</title>
+</head>
+<body>
+    <script>
+        // function Foo() {}
+        // console.log(Foo.prototype)
+        // console.log(Foo.prototype.constructor)
+        // console.log(Foo.__proto__)
+        // console.log(Function.prototype)
+        // console.log(Foo.prototype.__proto__)
+
+
+        // Array.prototype.sum = function() {
+//     var sum = 0
+//     for(var i = 0; i < this.length; i++) {
+//         sum += this[i]
+//     }
+//     return sum
+// }
+// var that = this
+
+// Array.prototype = {
+//     sum: function() {
+//         var sum = 0
+//         for(var i = 0; i < that.length; i++) {
+//             sum += that[i]
+//         }
+//         return sum
+//     }
+// }
+// var arr = [1,3,4]
+// console.log(arr.sum());
+
+// function father() {
+//     console.log('我在这里啊');
+//     console.log(this);
+    
+// }
+// var o = {
+//     name: 'wentian'
+// }
+
+// father.call(o)
+
+
+//子构造函数继承父构造函数
+   
+//父构造函数
+// function Father(uname, age) {
+//     this.uname = uname
+//     this.age = age
+// } 
+// //子构造函数
+// function Son(uname, age) {
+//     Father.call(this, uname,age)
+// }
+
+// Son.prototype.exam = function() {
+//     console.log('kaoshi');
+    
+// }
+// var son = new Son('刘德华',18)
+// Son.prototype = new Father()
+// console.log(Son.prototype);]
+
+// var data = [{
+//     id: 1,
+//     name: '家电',
+//     goods: [{
+//         id: 11,
+//         gname: '冰箱'
+//     }, {
+//         id: 12,
+//         gname: '洗衣机',
+//     }]
+// }, {
+//     id: 2,
+//     name: '服饰'
+// }]
+
+// //输入id号， 返回相应的数据对象
+
+// function getData(data, id) {
+//     var o = {}
+//     data.forEach(item => {
+//         if(item.id == id){
+//             o = item
+//         }else if(item.goods && item.goods.length > 0) {
+//             return o = getData(item.goods, id)
+//         }
+        
+//     })
+//     return o
+// }
+
+// var res = getData(data, 11)
+// console.log(res);
+
+var tag = document.createElement('div')
+// tag.style.cssText = "color: red"
+tag.style['width'] = 30 + 'px'
+console.log(tag);
+
+
+
+
+    </script>
+</body>
+</html>

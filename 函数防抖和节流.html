@@ -5,19 +5,108 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="btn">点击</button>
     <script>
-        function debounce() {
-            var timer = null
-            return function() {
-                if(timer) {
-                    clearTimeout(timer)
-                    timer = null
-                }
-               timer = setTimeout(function() {
-                console.log('你好')
-               }, 1000)
-            }
+
+    // 函数防抖
+    //当一次事件发生后, 事件处理器要等待一定时间,如果这段时间过去后 再也没有事件发生, 就处理最后一次发生的事件    假设还差0.01秒就到达指定时间,这时又来了一个事件,那么之前的等待作废,需要重新在等待指定时间
+
+    var btn = document.getElementById('btn')
+    
+    function debounce(wait) {
+        let timer
+        return function() {
+            if(timer) {
+                console.log('qing chu');
+                
+                clearTimeout(timer)
+            }            
+            timer = setTimeout(function() {
+                console.log('wozaizhr');
+                timer = null
+            }, wait)
         }
+    }
+
+    btn.onclick = function() {
+        debounce(2000)();
+         
+    }
+    
+    let res = setTimeout(function() {
+        console.log('执行'); 
+    }, 1000)
+
+    let res_1 = setTimeout(function() {
+        console.log('wo shi di er ge ');
+        
+    }, 1000)
+    console.log(res);
+    console.log(res_1);
+
+    
+
+
+    //节流函数
+//     function throttle(fn, interval) {
+//         let last = 0
+
+//         return function() {
+//             let _this = this
+//             let args = arguments
+//             let now = +new Date()
+//             if(now - last >= interval) {
+//                 last = now
+//                 fn.apply(_this, args)
+//             }
+//         }
+//     }
+
+function throttle(fn, interval) {
+    let last = 0
+    return function() {
+        let _this = this
+        let args = arguments
+        let now = +new Date()
+        if(now - last >= interval) {
+            last = now
+            fn.apply(_this, arguments)
+        }
+    }
+}
+
+
+// // 用throttle来包装scroll的回调
+// const better_scroll = throttle(() => console.log('触发了滚动事件'), 1000)
+
+// document.addEventListener('scroll', better_scroll)
+
+
+
+// //函数防抖
+// function debounce(fn, interval) {
+//     let timer = null
+//     return function() {
+//         let _this = this
+//         let args = arguments
+//         if(timer) {
+//             clearTimeout(timer)
+//         }
+
+//         timer = setTimeout(function() {
+//             fn.apply(_this, arguments)
+//         }, interval)
+//     }
+// }
+
+
+// // 用debounce来包装scroll的回调
+// const better_scroll = debounce(() => console.log('触发了滚动事件'), 1000)
+
+// document.addEventListener('scroll', better_scroll)
+
+
+
     </script>
 </body>
 </html>

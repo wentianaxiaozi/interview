@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var obj = {
+            name: {
+                myName: 'chuan' 
+            },
+            arr: [1,[2,3]],
+            type: undefined,
+            empty: null,
+            fun: function() {
+                console.log('chuan')
+            }
+        }
+
+        function deepCopy(obj) {
+            let res = obj instanceof Array ? [] : {}
+            let keys = Object.keys(obj)
+            let key = null
+            let temp = null
+            for(let i = 0; i < keys.length; i++) {
+                key = keys[i]
+                temp = obj[key]
+                
+                if(temp && temp instanceof Object) {
+                    //解决堆栈溢出
+                    if(temp != obj) {
+                        res[key] = deepCopy(temp)
+                    }
+                }else {
+                    res[key] = temp
+                }
+            }
+            return res
+        }
+
+        // let result = deepCopy(obj)
+        // console.log(result);
+        function Tian() {
+
+        }
+        let _obj = new Tian()
+        let proto = Tian.prototype.constructor.prototype
+        console.log(proto);
+        
+        
+    </script>
+</body>
+</html>

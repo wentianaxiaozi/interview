@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转数组的最小数字</title>
+</head>
+<body>
+    <script>
+        /*
+            暴力法     时间复杂度O(N)   空间复杂度O(1)
+        */
+
+        // function minNumberArr(rotateArray) {
+        //     const length = rotateArray.length
+        //     if(!length) {
+        //         return 0
+        //     }
+
+        //     return Math.min(...rotateArray)
+        // }
+
+        // let arr = [3,4,5,1,2]
+        // let result = minNumberArr(arr)
+
+
+        /*
+            二分法查找
+
+        */
+
+        let arr = [33, 40, 46, 57, 63, 16, 65, 71, 85]
+
+
+        function minNumberInRotateArray(rotateArray) {
+            const length = rotateArray.length;
+            if (!length) {
+                return 0;
+            }
+
+            let left = 0,
+                right = length - 1;
+            while (left < right) {
+                let mid = Math.floor((left + right) / 2);
+
+                // // 子数组有序
+                // if (rotateArray[left] < rotateArray[right]) {
+                //     return rotateArray[left];
+                // }
+
+                // 左子数组有序，最小值在右边
+                // 那么mid肯定不可能是最小值（因为rotateArray[mid]大于rotateArray[left]）
+                if (rotateArray[left] > rotateArray[mid]) {
+                    left = mid + 1;
+                    // 右子数组有序，最小值在左边
+                    // 这里right=mid因为最小值可能就是rotateArray[mid]
+                } else if (rotateArray[mid] < rotateArray[right]) {
+                    right = mid;
+                } else {
+                    // 无法判断，缩小下范围
+                    ++left;
+                }
+            }
+
+            return rotateArray[left];
+        }
+
+        let result = minNumberInRotateArray(arr)
+        console.log(result)
+
+    </script>
+</body>
+</html>

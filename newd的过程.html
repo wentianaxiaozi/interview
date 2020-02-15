@@ -5,18 +5,34 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var new = new myFuction('tian', 'code')
-		new myFuction {
-			let obj = {}
-			obj.__proto__ = myFuction.prototype
-			let result = myFuction.call(obj, 'tian','code')
-			return typeof result === 'obj' ? result : obj
-		}
+		// var new = new myFuction('tian', 'code')
+		// new myFuction {
+		// 	let obj = {}
+		// 	obj.__proto__ = myFuction.prototype
+		// 	let result = myFuction.call(obj, 'tian','code')
+		// 	return typeof result === 'obj' ? result : obj
+		// }
 
 		// 创建一个空对象
 		// 将新创建的空对象的隐士原型指向其构造函数的显示原型
 		// 使用call 改变this 指向
 		// 如果无法返回值或者返回一个非对象值，则将obj返回作为新对象；如果返回值是一个新对象的话那么直接返回该对象
+
+		// function New(func) {
+		// 	let res = {}
+		// 	console.log(func)
+		// }
+
+		// let obj = New(A)
+
+		new MyFunction {
+			let obj = {}
+			obj.__proto__ = MyFunction.prototype
+			let result = MyFunction.call(obj, 'tian', 18)
+
+			return typeof result === ''
+		}
+
 	</script>
 </body>
 </html>

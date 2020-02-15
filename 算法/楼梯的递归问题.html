@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 假如楼梯有n个台阶，每次可以走1个或2个台阶，请问走完这n个台阶有几种走法❓
+
+        function climbStairs(n) {
+            if(n == 1) {
+                return 1
+            }
+            if(n == 2) {
+                return 2
+            }
+            return climbStairs(n - 1) + climbStairs(n - 2)
+        }
+
+        let result = climbStairs(3)
+        console.log(result)
+    </script>
+</body>
+</html>
